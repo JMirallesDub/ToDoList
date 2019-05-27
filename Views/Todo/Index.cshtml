@@ -1,0 +1,40 @@
+@model TodoViewModel;
+
+@{
+    ViewData["Title"] = "Manage your todo list";
+}
+
+<div class="panel panel-default todo-panel">
+    <div class="panel-heading">@ViewData["Title"]</div>
+
+    <table id="table" class="table table-hover">
+        <thead>
+            <tr>
+                <td>&#x2714;</td>
+                <td>Title</td>
+                <td>Description</td>
+                <td>Last modification</td>
+            </tr>
+        </thead>
+        @foreach (var item in Model.Items)
+        {
+            <tr>
+                <td>
+                    <form asp-action="MarkDone" method="POST">
+                        <input type="checkbox" checked="@item.IsDone" class="done-checkbox">
+                        <input type="hidden" name="id" value="@item.Id">
+                    </form>
+                </td>
+                <td>@item.Title</td>
+                <td>@item.Description</td>
+                <td>@item.LastModification</td>
+            </tr>
+        }
+    </table>
+    <div class="panel-footer add-item-form">
+        @await Html.PartialAsync("AddItemPartial", new TodoItem())
+    </div>
+
+</div>
+
+
