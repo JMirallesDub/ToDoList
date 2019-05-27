@@ -1,0 +1,80 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\TODO_List3\\TdoListo.UnitTests\\AspNetCoreTodo.UnitTests.csproj": {}
+  },
+  "projects": {
+    "C:\\TODO_List3\\TdoListo.UnitTests\\AspNetCoreTodo.UnitTests.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\TODO_List3\\TdoListo.UnitTests\\AspNetCoreTodo.UnitTests.csproj",
+        "projectName": "AspNetCoreTodo.UnitTests",
+        "projectPath": "C:\\TODO_List3\\TdoListo.UnitTests\\AspNetCoreTodo.UnitTests.csproj",
+        "packagesPath": "C:\\Users\\jmiralles\\.nuget\\packages\\",
+        "outputPath": "C:\\TODO_List3\\TdoListo.UnitTests\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\jmiralles\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.0": {
+            "projectReferences": {
+              "C:\\TODO_List3\\AspNetCoreTodo\\AspNetCoreTodo.csproj": {
+                "projectPath": "C:\\TODO_List3\\AspNetCoreTodo\\AspNetCoreTodo.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.0": {
+          "dependencies": {
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[15.3.0-preview-20170628-02, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.0, )",
+              "autoReferenced": true
+            },
+            "NSubstitute": {
+              "target": "Package",
+              "version": "[2.0.3, )"
+            },
+            "xunit": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "xunit.runner.visualstudio": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    }
+  }
+}

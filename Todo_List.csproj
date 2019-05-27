@@ -6,6 +6,17 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="TdoListo.UnitTests\**" />
+    <Compile Remove="ToDoList.IntegrationTests\**" />
+    <Content Remove="TdoListo.UnitTests\**" />
+    <Content Remove="ToDoList.IntegrationTests\**" />
+    <EmbeddedResource Remove="TdoListo.UnitTests\**" />
+    <EmbeddedResource Remove="ToDoList.IntegrationTests\**" />
+    <None Remove="TdoListo.UnitTests\**" />
+    <None Remove="ToDoList.IntegrationTests\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Compile Remove="Data\Migrations\00000000000000_CreateIdentitySchema.cs" />
     <Compile Remove="Data\Migrations\00000000000000_CreateIdentitySchema.Designer.cs" />
     <Compile Remove="Data\Migrations\20170827031600_AddItems.cs" />
